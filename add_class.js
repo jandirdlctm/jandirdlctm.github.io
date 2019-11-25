@@ -19,9 +19,9 @@ console.log("We are connected");
 //var BASE_URL = "https://squirrelvillage.herokuapp.com"
 //change it everywhere where it says "localhost"
 
-var BASE_URL = "https://class-rating-app.herokuapp.com";
 
 //CREATING THE CLASSES
+var BASE_URL = "https://class-rating-app.herokuapp.com";
 var Classes = null;
 var createClass = function(clas, major, professor, location, rating) {
 	var data = "clas=" + encodeURIComponent(clas);
@@ -44,7 +44,7 @@ var createClass = function(clas, major, professor, location, rating) {
 	});
 };
 
-
+var BASE_URL = "https://class-rating-app.herokuapp.com";
 var deleteClass = function(id){
 	console.log(id)
 
@@ -124,6 +124,7 @@ ratingObject.value = rating;
 updateButton.innerHTML = "Update"
 
 //UPDATE BUTTON FUNCTIONALITY
+var BASE_URL = "https://class-rating-app.herokuapp.com";
 var updateButon = document.querySelector("#SubmitUpdate");
 updateButton.onclick = function(){
 clas = classObject.value;
@@ -174,6 +175,7 @@ fetch(`BASE_URL/classes/${id}`, {
 
 //LOGIN PAGE
 // AUTHENTICATION
+var BASE_URL = "https://class-rating-app.herokuapp.com";
 var login = function(userNameInput, passwordInput){
 	var h3 = document.querySelector("#h3")
 	datdastring = 'email=' + encodeURIComponent(userNameInput)+ '&password=' + encodeURIComponent(passwordInput)
@@ -303,7 +305,7 @@ NewUser.onclick = function(){
 }
 };
 
-
+var BASE_URL = "https://class-rating-app.herokuapp.com";
 var createNewUser = function(fname,lname,email,password){
 	var data = "fname=" + encodeURIComponent(fname);
 	data += "&lname=" + encodeURIComponent(lname);
@@ -350,7 +352,7 @@ var createNewUser = function(fname,lname,email,password){
 
 
 
-
+var BASE_URL = "https://class-rating-app.herokuapp.com";
 var addClasses = function(){
 	fetch("BASE_URL/classes",{
 		credentials: 'include'
