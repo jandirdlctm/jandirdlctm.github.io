@@ -1,1 +1,113 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Class-Rating</title>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div id= "page-banner">
+				<IMG SRC="dsu_logo.png" ALT="some text" WIDTH=60 HEIGHT=40>
+				<h1>Dixie State Class Rating</h1>
+			</div>
+
+		</header>
+		
+		
+		<div id= "loginPage">
+			<h1> Login to Your Class Rating Account</h1>
+			<h3 id = "h3"></h3>
+
+			<input id="userName" type="text" name="uname" placeholder="Username"> <br>
+			<input id="Password" type="password" name="password" placeholder="Password"><br>
+			<div id = "loginButton">
+				<button id="login" class="btn btn-success">Login</button>
+			</div>
+			<div id = "newUserButton">
+				<button id="newUser" class="btn btn-success">New User</button>
+			</div>
+		</div>
+
+		<div id= "signUpPage">
+
+			<h1> Create New Class Rating Account </h1>
+			<h2 id= "InUse"> </h2>
+			<input id="fname" type="text" name="Fname" placeholder="First Name"><br>
+			<input id="lname" type="text" name="Lname" placeholder="Last Name"><br>
+			<input id="email" type="text" name="Email" placeholder="Email"><br>
+			<input id="password" type="password" name="Password" placeholder="Password"><br>
+			<div id= "signUpButton">
+				<button id="signup" class="btn btn-success">Sign Up</button>
+			</div>
+		</div>
+
+
+		<div id="mainPage">
+	
+
+			<div id = "class_list">
+					<h2 class="list_title"> Popular Classes: </h2> 
+					<ul>
+	    		
+	    			<li>
+	    				<span class="name">CS 1410</span>
+	    			</li>
+	    			<li>
+	    				<span class="name">CS 1400</span>
+	    			</li>
+	    			<li>
+	    				<span class="name">CALCULUS I</span>
+	    			</li>
+	    			<li>
+	    				<span class="name">CALCULUS II</span>
+	    			</li>
+	    			<li>
+	    				<span class="name">PHYSICS</span>
+	    			</li>
+	    			<li>
+	    				<span class="name"> BIOLOGY</span>
+	    			</li>
+
+	    			</ul>
+			</div>
+		
+			<h4 class = "information"> Fill out class info, and rate it!</h4>
+		
+
+
+			<input  placeholder="Class" type="text" id="class">
+
+			<input  placeholder="Major" type="text" id="major">
+
+			<input  placeholder="Professor" type="text" id="professor">
+
+			<input  placeholder="Location" type="text" id="location">
+
+			<input  placeholder="Rating" type="text" id="rating">
+
+
+
+			<div id = "button_1">
+				<button id = "add_class">Add Class</button>
+			</div>
+			<div id = "button_3">
+				<button id = "SubmitUpdate">Update Class</button>
+			</div>
+			<div id = "button_2">
+				<button id = "done">Done</button>
+			</div>
+		
+
+			<div id = "class_intro">
+				<h4> Your ratings history: </h4>
+			</div>
+			<ul id="layout"> </ul>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="add_class.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+h1, h2, h4{
+    font-weight: normal;
+    text-align: center;
+}
+ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    background-color: #DCDCDC;
+}
+
+#page-banner{
+    background: #eee ;
+    padding: 10px 0;
+    background-color: #ba1c21;
+    color: white;
+    font-family: "Impact", Charcoal, sans-serif;
+    font-size: 23px;
+
+}
+#add_class{
+    margin: 4px;
+    text-align: center;
+}
+
+#done{
+    margin: 5px;
+}
+
+
+#information{
+    text-align: center;
+}
+#layout{
+    text-align: center;
+}
+
+ol{
+    list-style: none;
+    text-align: center;
+}
+#button_1, #button_2, #button_3, #loginButton, #newUserButton, #signUpButton{
+    text-align: center;
+}
+#layout{
+    border: 1px solid lightgray;
+}
+#class, #rating, #major, #professor, #location{
+    position: relative;
+    display: block;
+    margin : 0 auto;
+    text-align: center;
+}
+input {
+    display: block;
+}
+
+#userName,#Password, #fname, #lname, #email, #password{
+    position: relative;
+    display: block;
+    margin : 0 auto;
+    text-align: center;
+}
+
