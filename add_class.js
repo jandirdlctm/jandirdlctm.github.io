@@ -21,7 +21,7 @@ console.log("We are connected");
 
 
 //CREATING THE CLASSES
-var BASE_URL = "https://class-rating-app.herokuapp.com";
+//var BASE_URL = "https://class-rating-app.herokuapp.com";
 var Classes = null;
 var createClass = function(clas, major, professor, location, rating) {
 	var data = "clas=" + encodeURIComponent(clas);
@@ -30,7 +30,7 @@ var createClass = function(clas, major, professor, location, rating) {
 	data += "&location=" + encodeURIComponent(location);
 	data += "&rating=" + encodeURIComponent(rating);
 
-	fetch("BASE_URL/classes", {
+	fetch("https://class-rating-app.herokuapp.com/classes", {
 		method: 'POST',
 		body: data,
 		credentials: 'include',
@@ -48,7 +48,7 @@ var BASE_URL = "https://class-rating-app.herokuapp.com";
 var deleteClass = function(id){
 	console.log(id)
 
-	fetch(`BASE_URL/classes/${id}`, {
+	fetch(`https://class-rating-app.herokuapp.com/classes/${id}`, {
 		method: "DELETE",
 		credentials: 'include'
 	}).then(function(response){
@@ -156,7 +156,7 @@ if (clas != ""){
 		alert("Enter a valid class please");
 	}
 
-fetch(`BASE_URL/classes/${id}`, {
+fetch(`https://class-rating-app.herokuapp.com/classes/${id}`, {
 	method: 'PUT',
 	credentials: 'include',
 	body: data,
@@ -179,7 +179,7 @@ var BASE_URL = "https://class-rating-app.herokuapp.com";
 var login = function(userNameInput, passwordInput){
 	var h3 = document.querySelector("#h3")
 	datdastring = 'email=' + encodeURIComponent(userNameInput)+ '&password=' + encodeURIComponent(passwordInput)
-	fetch("BASE_URL/sessions",{
+	fetch("https://class-rating-app.herokuapp.com/sessions",{
 		method: "POST",
 		body: datdastring,
 		credentials: "include"
@@ -312,7 +312,7 @@ var createNewUser = function(fname,lname,email,password){
 	data += "&email=" + encodeURIComponent(email);
 	data += "&password=" + encodeURIComponent(password);
 
-	fetch("BASE_URL/users",{
+	fetch("https://class-rating-app.herokuapp.com/users",{
 		method: "POST",
 		body: data,
 		credentials: "include"
