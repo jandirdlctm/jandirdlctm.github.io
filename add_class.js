@@ -44,7 +44,7 @@ var createClass = function(clas, major, professor, location, rating) {
 	});
 };
 
-var BASE_URL = "https://class-rating-app.herokuapp.com";
+//var BASE_URL = "https://class-rating-app.herokuapp.com";
 var deleteClass = function(id){
 	console.log(id)
 
@@ -124,7 +124,7 @@ ratingObject.value = rating;
 updateButton.innerHTML = "Update"
 
 //UPDATE BUTTON FUNCTIONALITY
-var BASE_URL = "https://class-rating-app.herokuapp.com";
+//var BASE_URL = "https://class-rating-app.herokuapp.com";
 var updateButon = document.querySelector("#SubmitUpdate");
 updateButton.onclick = function(){
 clas = classObject.value;
@@ -175,7 +175,7 @@ fetch(`https://class-rating-app.herokuapp.com/classes/${id}`, {
 
 //LOGIN PAGE
 // AUTHENTICATION
-var BASE_URL = "https://class-rating-app.herokuapp.com";
+//var BASE_URL = "https://class-rating-app.herokuapp.com";
 var login = function(userNameInput, passwordInput){
 	var h3 = document.querySelector("#h3")
 	datdastring = 'email=' + encodeURIComponent(userNameInput)+ '&password=' + encodeURIComponent(passwordInput)
@@ -305,7 +305,7 @@ NewUser.onclick = function(){
 }
 };
 
-var BASE_URL = "https://class-rating-app.herokuapp.com";
+//var BASE_URL = "https://class-rating-app.herokuapp.com";
 var createNewUser = function(fname,lname,email,password){
 	var data = "fname=" + encodeURIComponent(fname);
 	data += "&lname=" + encodeURIComponent(lname);
