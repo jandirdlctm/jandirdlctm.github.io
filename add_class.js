@@ -352,9 +352,9 @@ var createNewUser = function(fname,lname,email,password){
 
 
 
-var BASE_URL = "https://class-rating-app.herokuapp.com";
+//var BASE_URL = "https://class-rating-app.herokuapp.com";
 var addClasses = function(){
-	fetch("BASE_URL/classes",{
+	fetch("https://class-rating-app.herokuapp.com/classes",{
 		credentials: 'include'
 	}).then(function(response){
 		console.log("server responded.");
